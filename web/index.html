@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+  <script src="https://cdn.firebase.com/js/client/1.0.21/firebase.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+</head>
+<body>
+      <script>
+        var fruitRef = new Firebase("https://test-firebase-please-ignore.firebaseio.com/fruitdetector");
+        fruitRef.on("value", function(snapshot) {
+          var fruitType = snapshot.val();
+          $("#fruit-type").text(fruitType.type);
+          switch (fruitType.type) {
+            case "orange":
+              $("#fruit-type").removeClass("apple");
+              $("#fruit-type").addClass("orange");
+              break;
+            case "apple":
+              $("#fruit-type").removeClass("orange");
+              $("#fruit-type").addClass("apple");
+              break;
+            default:
+              $("#fruit-type").removeClass("apple");
+              $("#fruit-type").removeClass("orange");
+          }
+        });
+      </script>
+      <style>
+        #fruit-type {
+          height: 300px;
+          width: 100%;
+          background:none no-repeat left;
+        }
+        #fruit-type.apple {
+          background: url(img/apple.png) no-repeat left;
+          background-size: contain;
+        }
+        #fruit-type.orange {
+          background: url(img/orange.png) no-repeat left;
+          background-size: contain;
+        }
+      </style>
+      <h2>Your fruit is an</h2>
+      <h1 id="fruit-type">None</h1>
+</body>
+</html>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Fruit Detector</string>
+    <string name="title_activity_detect_fruit">Detect Fruit Immersion</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="glass_voice_prompt">Detect fruit</string>
+</resources>
