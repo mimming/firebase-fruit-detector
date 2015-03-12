@@ -17,13 +17,14 @@ public class DetectFruitActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Firebase.setAndroidContext(this);
 
         setContentView(R.layout.activity_detect_fruit);
         final ImageView fruitImageView = (ImageView)findViewById(R.id.fruit_image);
 
-        Firebase myFirebaseRef = new Firebase("https://test-firebase-please-ignore.firebaseio.com/");
+        Firebase myFirebaseRef = new Firebase("https://fruit.firebaseio-demo.com/");
 
-        myFirebaseRef.child("fruitdetector").child("type").addValueEventListener(new ValueEventListener() {
+        myFirebaseRef.child("type").addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot snapshot) {
                 String fruitType = snapshot.getValue(String.class);

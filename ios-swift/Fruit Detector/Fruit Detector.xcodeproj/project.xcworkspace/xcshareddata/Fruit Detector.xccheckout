@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>DD947F63-AEBC-4D27-A3B7-05B8E5B9891D</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Fruit Detector</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>812BD2FCC9C0B2FB503A910CA6C684FFFC143882</key>
+		<string>github.com:mimming/firebase-fruit-detector.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ios-swift/Fruit Detector/Fruit Detector.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>812BD2FCC9C0B2FB503A910CA6C684FFFC143882</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:mimming/firebase-fruit-detector.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>812BD2FCC9C0B2FB503A910CA6C684FFFC143882</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>812BD2FCC9C0B2FB503A910CA6C684FFFC143882</string>
+			<key>IDESourceControlWCCName</key>
+			<string>firebase-fruit-detector</string>
+		</dict>
+	</array>
+</dict>
+</plist>
